@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct StudentTag {
+    char name[100];
+    int age;
+    char adress[100];
+}person;
+
+void swapSt(person *x, person *y){
+        person temp;
+        temp = *x;
+        *x = *y;
+        *y = temp;
+    }
+
+int main(void){
+    person sion = {"오시온", 21, "인천"};
+    person aa = {"dd", 100, "순대"};
+    swapSt(&sion, &aa);
+
+    person *ps = (person*)malloc(sizeof(person));
+    ps->age = sion.age;
+    ps->age = aa.age;
+    
+}
+

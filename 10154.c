@@ -1,0 +1,9 @@
+//swap() 함수코드
+void swap(int *a, int *b){
+    int temp;
+
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
